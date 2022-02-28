@@ -1,10 +1,236 @@
+@font-face {
+	font-family: 'GideonRoman-Regular';
+	src: url('fonts/GideonRoman-Regular.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Genos-VariableFont_wght';
+	src: url('fonts/Genos-VariableFont_wght.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Glory-VariableFont_wght';
+	src: url('fonts/Glory-VariableFont_wght.ttf') format('ttf');
+}
+
 * {
 	margin: 0;
 	padding: 0;
-	border: .5px solid black;
 }
 
 img {
 	width: 100px;
 	height: 100px;
+}
+
+/* Header */
+
+.h-container {
+	display: flex;
+	background-color: #a1a1aa;
+	height: 193px;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 55px;
+}
+
+.name h1 {
+	position: absolute;
+	z-index: 15;
+	margin: 7% 0 0 16px;
+	color: white;
+	font: 2.3em "GideonRoman-Regular", monospace;
+}
+
+.name img {
+    width: 300px;
+    height: 193px;
+}
+
+.h-left {
+	margin-left: 10%;
+}
+
+.h-right {
+	background-color: white;
+	margin: 30px 18% 0 0;
+	padding: 10px 10% 20px 28px;
+	height: 100px;
+}
+
+.h-social {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.h-social img {
+	width: 25px;
+	height: 25px;
+	margin: 3px 0 0 16px;
+}
+
+.h-right h2 {
+	font: 1.3em "Genos-VariableFont_wght", monospace;
+}
+
+.h-right p {
+	font: .7em "Glory-VariableFont_wght", monospace ;
+}
+
+/* Main */
+
+.main-container {
+	margin: 23px 81px 30px 49px;
+	padding: 0 0 0 6em;
+}
+
+.main-projects {
+    display: grid;
+    grid-template-columns: .2fr 0.1fr 0.1fr .2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 36px;
+}
+
+.project-card1 {
+	width: 278px;
+    height: 182px;
+	grid-column: 2 / 3;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.project-card2 {
+	width: 278px;
+    height: 182px;
+	grid-column: 3 / 4;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.project-card3 {
+	width: 278px;
+    height: 182px;
+	grid-column: 4 / 5;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.project-card4 {
+	width: 278px;
+    height: 182px;
+	grid-column: 2 / 3;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.project-card5 {
+	width: 278px;
+    height: 182px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	grid-column: 3 / 4;
+}
+
+.project-card6 {
+	width: 278px;
+    height: 182px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	grid-column: 4 / 5;
+}
+
+.ss {
+	width: 488px;
+	height: 100px;
+	background-color: rgba(0, 0, 255, 0.4);
+}
+
+.p-social {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.p-social img {
+	width: 26px;
+	height: 23px;
+}
+
+.p-social h4 {
+	font: 1em "Genos-VariableFont_wght", monospace;
+}
+
+.main-container h2 {
+	margin-left: 5.7em;
+    font: 1.6em "Genos-VariableFont_wght", monospace;
+}
+
+.main-projects h3 {
+	font: 2em "Glory-VariableFont_wght", monospace ;
+	position: absolute;
+	z-index: 15;
+	color: white;
+	width: min-content;
+}
+
+.main-projects p {
+	font: .8em "GideonRoman-Regular", monospace;
+}
+
+.p-ss {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Footer */
+
+.footer-container {
+	display: flex;
+	background-color: #a1a1aa;
+	color: white;
+	height: 176px;
+}
+
+.footer-contact {
+	margin: 0 0 0 100px;
+}
+
+.phone {
+	display: flex;
+	margin-left: 16px;
+}
+
+.email {
+	display: flex;
+	margin-left: 16px;
+}
+
+.footer-contact img {
+	width: 20px;
+	height: 20px;
+}
+
+
+.footer-social {
+	margin-left: 14px;
+}
+
+.footer-container h2 {
+	font: 1em "GideonRoman-Regular", monospace;
+	margin: 3px 0 2px 20px;
+	font-weight: 600;
+}
+
+.footer-container p {
+	font: .7em "Glory-VariableFont_wght", monospace;
+	margin: 2px 0 5px 20px;
+}
+
+.footer-left img {
+	padding: 7px 0 0 86px;
+	width: 352px;
+	height: 152px;
+}
+
+.footer-social img {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
 }
